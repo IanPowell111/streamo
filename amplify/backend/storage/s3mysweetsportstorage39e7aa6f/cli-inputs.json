@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3mysweetsportstorage39e7aa6f",
+  "bucketName": "mysweetsport-storage-39e7aa6f",
+  "policyUUID": "d65f01bb",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ]
+}

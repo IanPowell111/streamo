@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mysweetsport-dev-135036-authRole",
+      "UnauthRoleArn": "arn:aws:iam::520607123265:role/amplify-mysweetsport-dev-135036-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::520607123265:role/amplify-mysweetsport-dev-135036-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mysweetsport-dev-135036-deployment",
+      "UnauthRoleName": "amplify-mysweetsport-dev-135036-unauthRole",
+      "StackName": "amplify-mysweetsport-dev-135036",
+      "StackId": "arn:aws:cloudformation:us-east-1:520607123265:stack/amplify-mysweetsport-dev-135036/066b4fc0-7fce-11ed-9231-1227b8eacd93",
+      "AmplifyAppId": "dtmk7ddfqoslj"
+    },
+    "categories": {
+      "auth": {
+        "mysweetsport": {}
+      },
+      "storage": {
+        "s3mysweetsportstorage39e7aa6f": {}
+      }
+    }
+  }
+}

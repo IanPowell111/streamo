@@ -1,0 +1,11 @@
+type Video @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  length: String
+  meta: [AWSJSON]
+  type: String
+  views: Int
+  subTitl: String
+  description: String!
+  thumbnail: String!
+}
