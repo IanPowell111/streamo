@@ -1,13 +1,23 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  // RuntimeConfig: {
+  //   gmail_client_id: process.env.GMAIL_CLIENT_ID,
+  // },
+  // privateRuntimeConfig: {
+  //   myPrivateToken: process.env.PRIVATE_TOKEN
+  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Streamo - Netflix Like VueJs Website Template',
     htmlAttrs: {
       lang: 'en'
     },
+    script: [
+      {
+        src: 'https://accounts.google.com/gsi/client',
+      },
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -64,12 +74,58 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
-    '@nuxtjs/dayjs'
+    '@nuxtjs/dayjs',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // '@sidebase/nuxt-auth',    
   ],
+  auth: {
+    // Options
+    strategies: {
+      local: {
+        token: {
+          required: false,
+          type: false
+        },
+        endpoints: {
+          login: { url: '/api/auth/login', method: 'post' },
+        }
+      },
+      github: { /* ... */ },
+      social: {
+        scheme: 'oauth2',
+        endpoints: {
+          authorization: 'https://accounts.google.com/o/oauth2/auth',
+          token: undefined,
+          userInfo: 'https://www.googleapis.com/oauth2/v3/userinfo',
+          logout: 'https://example.com/logout'
+        },
+        token: {
+          property: 'access_token',
+          type: 'Bearer',
+          maxAge: 1800
+        },
+        refreshToken: {
+          property: 'refresh_token',
+          maxAge: 60 * 60 * 24 * 30
+        },
+        responseType: 'token',
+        grantType: 'authorization_code',
+        accessType: undefined,
+        redirectUri: undefined,
+        logoutRedirectUri: undefined,
+        clientId: 'SET_ME',
+        scope: ['openid', 'profile', 'email'],
+        state: 'UNIQUE_AND_NON_GUESSABLE',
+        codeChallengeMethod: '',
+        responseMode: '',
+        acrValues: '',
+        // autoLogout: false
+      }
+    }
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

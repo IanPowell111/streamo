@@ -1,10 +1,13 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <form action="#">
+            <div id="googleButton"></div>
+            <div id="facebookButton"></div>
+            <div id="twitterButton"></div>
+            <form @submit.prevent="userLogin">
                 <div class="login-input-box">
-                    <input type="text" name="user-name" placeholder="User Name" class="user-input">
-                    <input type="password" name="user-password" placeholder="Password" class="user-input">
+                    <input type="text" name="user-name" placeholder="User Name" class="user-input" v-model="login.username">
+                    <input type="password" name="user-password" placeholder="Password" class="user-input" v-model="login.password">
                 </div>
                 <div class="login-toggle-btn">
                     <input class="mr-1" type="checkbox">
@@ -25,4 +28,59 @@
 .user-input{
     @apply border-1 border-[#1e272d] text-white bg-[#1e272d] mb-5 px-2 py-3 w-full text-[14px];
 }
+#googleButton{
+    @apply mb-5;
+}
 </style>
+<script>
+
+export default {
+  middleware: 'auth',
+  mounted() {
+    // initialize Google Sign in  
+    google.accounts.id.initialize({
+        client_id: process.env.EMAIL_CLIENT_ID,
+        callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
+        context: 'signin'
+      })
+    
+    // render button
+    google.accounts.id.renderButton(
+      document.getElementById('googleButton'),
+      { 
+        type: 'standard',
+        size: 'large',
+        text: 'signin_with',
+        shape: 'rectangular',
+        logo_alignment: 'center',
+        // width: 250,
+        
+      }
+    )
+  },
+  data() {
+    return {
+      login: {
+        username: '',
+        password: ''
+      }
+    }
+  },
+  methods: {
+    async userLogin() {
+      try {
+        let response = await this.$auth.loginWith('local', { data: this.login })
+        console.log(response)
+      } catch (err) {
+        console.log(err)
+      }
+    },
+    handleCredentialResponse(response) {
+    
+      // call your backend API here
+      
+      // the token can be accessed as: response.credential
+    }
+  }
+}
+</script>
