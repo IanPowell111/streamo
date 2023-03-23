@@ -1,5 +1,8 @@
 // plugins/amplify.js
-import Amplify from 'aws-amplify'
-import '@aws-amplify/ui-vue';
-import config from '../src/aws-exports'
-Amplify.configure(config)
+import Vue from 'vue'
+import '@aws-amplify/ui-vue'
+import Amplify, { Auth } from 'aws-amplify'
+Amplify.configure({
+    aws_project_region: 'us-east-1' // (optional) Default region for project
+  });
+Vue.prototype.$Amplify = Amplify

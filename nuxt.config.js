@@ -63,7 +63,8 @@ export default {
     },
     {
       src: '~/plugins/vue-nav-tabs.js'
-    }
+    },
+    { src: "~/plugins/amplify.js", ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

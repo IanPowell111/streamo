@@ -1,11 +1,20 @@
+type Categories @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  videos: [Video] @manyToMany(relationName: "VideoCategories")
+}
+
 type Video @model @auth(rules: [{allow: public}]) {
   id: ID!
   title: String!
-  length: String
+  length: Int
   meta: [AWSJSON]
   type: String
   views: Int
-  subTitl: String
-  description: String!
-  thumbnail: String!
+  shortDescription: String
+  longDescription: String!
+  posterImageUrl: String!
+  categories: [Categories] @manyToMany(relationName: "VideoCategories")
+  postedDateTime: AWSDateTime
 }
+ 

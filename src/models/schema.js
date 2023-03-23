@@ -1,5 +1,80 @@
 export const schema = {
     "models": {
+        "Categories": {
+            "name": "Categories",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "name": {
+                    "name": "name",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "videos": {
+                    "name": "videos",
+                    "isArray": true,
+                    "type": {
+                        "model": "VideoCategories"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "categories"
+                        ]
+                    }
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "Categories",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
         "Video": {
             "name": "Video",
             "fields": {
@@ -20,7 +95,7 @@ export const schema = {
                 "length": {
                     "name": "length",
                     "isArray": false,
-                    "type": "String",
+                    "type": "Int",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -46,25 +121,48 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "subTitl": {
-                    "name": "subTitl",
+                "shortDescription": {
+                    "name": "shortDescription",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
-                "description": {
-                    "name": "description",
+                "longDescription": {
+                    "name": "longDescription",
                     "isArray": false,
                     "type": "String",
                     "isRequired": true,
                     "attributes": []
                 },
-                "thumbnail": {
-                    "name": "thumbnail",
+                "posterImageUrl": {
+                    "name": "posterImageUrl",
                     "isArray": false,
                     "type": "String",
                     "isRequired": true,
+                    "attributes": []
+                },
+                "categories": {
+                    "name": "categories",
+                    "isArray": true,
+                    "type": {
+                        "model": "VideoCategories"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "video"
+                        ]
+                    }
+                },
+                "postedDateTime": {
+                    "name": "postedDateTime",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
                     "attributes": []
                 },
                 "createdAt": {
@@ -108,10 +206,108 @@ export const schema = {
                     }
                 }
             ]
+        },
+        "VideoCategories": {
+            "name": "VideoCategories",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "categoriesId": {
+                    "name": "categoriesId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "videoId": {
+                    "name": "videoId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "categories": {
+                    "name": "categories",
+                    "isArray": false,
+                    "type": {
+                        "model": "Categories"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "categoriesId"
+                        ]
+                    }
+                },
+                "video": {
+                    "name": "video",
+                    "isArray": false,
+                    "type": {
+                        "model": "Video"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "videoId"
+                        ]
+                    }
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "VideoCategories",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byCategories",
+                        "fields": [
+                            "categoriesId"
+                        ]
+                    }
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byVideo",
+                        "fields": [
+                            "videoId"
+                        ]
+                    }
+                }
+            ]
         }
     },
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.6",
-    "version": "e12da8f577fb72aabf431762f5e88ec2"
+    "version": "e0925d754e5be35e28a8a6c5899c242b"
 };
