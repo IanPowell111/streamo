@@ -35,29 +35,29 @@
 <script>
 import { Auth }  from 'aws-amplify';
 export default {
-  // middleware: 'auth',
-  // mounted() {
-  //   // initialize Google Sign in  
-  //   google.accounts.id.initialize({
-  //       client_id: process.env.EMAIL_CLIENT_ID,
-  //       callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
-  //       context: 'signin'
-  //     })
+  middleware: 'auth',
+  mounted() {
+    // initialize Google Sign in  
+    google.accounts.id.initialize({
+        client_id: process.env.EMAIL_CLIENT_ID,
+        callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
+        context: 'signin'
+      })
     
-  //   // render button
-  //   google.accounts.id.renderButton(
-  //     document.getElementById('googleButton'),
-  //     { 
-  //       type: 'standard',
-  //       size: 'large',
-  //       text: 'signin_with',
-  //       shape: 'rectangular',
-  //       logo_alignment: 'center',
-  //       // width: 250,
+    // render button
+    google.accounts.id.renderButton(
+      document.getElementById('googleButton'),
+      { 
+        type: 'standard',
+        size: 'large',
+        text: 'signin_with',
+        shape: 'rectangular',
+        logo_alignment: 'center',
+        // width: 250,
         
-  //     }
-  //   )
-  // },
+      }
+    )
+  },
   data() {
     return {
       login: {
@@ -80,12 +80,12 @@ export default {
         console.log(err)
       }
     },
-    // handleCredentialResponse(response) {
+    handleCredentialResponse(response) {
     
-    //   // call your backend API here
+      // call your backend API here
       
-    //   // the token can be accessed as: response.credential
-    // }
+      // the token can be accessed as: response.credential
+    }
   }
 }
 </script>
