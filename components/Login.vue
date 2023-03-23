@@ -4,7 +4,7 @@
             <div id="googleButton"></div>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
-            <form @submit.prevent="userLogin">
+            <form>
                 <div class="login-input-box">
                     <input type="text" name="user-name" placeholder="User Name" class="user-input" v-model="login.username">
                     <input type="password" name="user-password" placeholder="Password" class="user-input" v-model="login.password">
@@ -15,7 +15,7 @@
                     <n-link class=" float-right text-[#ff0000] text-[14px]" to="/register">Forgot Password</n-link>
                 </div>
                 <div class="button-box">
-                    <button class="login-btn btn bg-green-brand mt-5 py-2 px-[30px] text-white font-semibold text-[14px] hover:bg-white hover:text-green-brand transition-all duration-300" type="submit">
+                    <button @click="userLogin" class="login-btn btn bg-green-brand mt-5 py-2 px-[30px] text-white font-semibold text-[14px] hover:bg-white hover:text-green-brand transition-all duration-300" type="submit">
                         <span>Login</span>
                     </button>
                 </div>
@@ -69,7 +69,9 @@ export default {
   methods: {
     
       
-    async userLogin() {
+    async userLogin(e) {
+      e.preventDefault();
+      
       try {
         const user = await Auth.signIn(this.login.username, this.login.password);
     
