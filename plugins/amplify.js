@@ -1,5 +1,5 @@
 // plugins/amplify.js
-import Vue from 'vue'
+import * as Vue from 'vue'
 import '@aws-amplify/ui-vue'
 import Amplify, { Auth } from 'aws-amplify'
 Amplify.configure({
