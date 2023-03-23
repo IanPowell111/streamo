@@ -66,13 +66,13 @@ export default {
       }
     }
   },
-  methods: {
-    
-      
+  methods: {      
     async userLogin() {
       try {
         const user = await Auth.signIn(this.login.username, this.login.password);
-    
+        if(user){
+          this.$router.push({ path: '/' });
+        }
         console.log(user)
       } catch (err) {
         console.log(err)
