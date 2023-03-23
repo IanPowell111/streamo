@@ -4,7 +4,7 @@
             <div id="googleButton"></div>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
-            <form>
+            <div>
                 <div class="login-input-box">
                     <input type="text" name="user-name" placeholder="User Name" class="user-input" v-model="login.username">
                     <input type="password" name="user-password" placeholder="Password" class="user-input" v-model="login.password">
@@ -19,7 +19,7 @@
                         <span>Login</span>
                     </button>
                 </div>
-            </form>
+              </div>
         </div>
     </div>
 </template>
@@ -75,7 +75,7 @@ export default {
       try {
         const user = await Auth.signIn(this.login.username, this.login.password);
     
-        console.log(user)
+        console.log('===================> ' + user)
       } catch (err) {
         console.log(err)
       }
