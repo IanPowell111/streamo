@@ -33,7 +33,7 @@
 }
 </style>
 <script>
-
+import { Auth }  from 'aws-amplify';
 export default {
   middleware: 'auth',
   mounted() {
