@@ -77,7 +77,7 @@ export default {
         username: '',
         password: ''
       }
-    },
+    }
   },
   validations: {
     username: { required, email},
