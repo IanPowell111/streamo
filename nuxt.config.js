@@ -80,7 +80,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // '@sidebase/nuxt-auth',    
+    // '@sidebase/nuxt-auth',   
+    '@nuxtjs/tailwindcss', 'nuxt-icon' 
   ],
   auth: {
     // Options
