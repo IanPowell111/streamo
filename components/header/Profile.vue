@@ -16,7 +16,7 @@
                         <n-link to="/account" class="">My Account</n-link>
                     </li>
                     <li class="mb-2">
-                        <n-link to="/login" class="">Sign Out</n-link>
+                        <n-link to="/login" class="" v-on:click="signOut">Sign Out</n-link>
                     </li>
                 </ul>
             </div>
@@ -27,6 +27,8 @@
 </template>
 <script>
 import vClickOutside from 'v-click-outside'
+import { Auth } from 'aws-amplify';
+// const header = () => (Auth.isUserLoggedIn()) ? <div>Account</div> : <div>Sign In</div>;
 export default{
     data(){
         return {
@@ -39,7 +41,8 @@ export default{
     methods: {
         onClickOutside (event) {
             this.displayClass = false;
-        }
+        },
+        signOut: async () => Auth.signOut()
     }
 }
 </script>
