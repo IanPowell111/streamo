@@ -4,9 +4,9 @@
             <div id="googleButton"></div>
             <form @submit.prevent="signUp">
                 <div class="login-input-box">
-                    <input type="text" name="user-name" placeholder="User Name" class="user-input" v-model="register.username">
+                    <input type="text" name="user-name" placeholder="Email" class="user-input" v-model="register.username">
                     <input type="password" name="user-password" placeholder="Password" class="user-input" v-model="register.password">
-                    <input type="email" name="email" placeholder="Email" class="user-input" v-model="register.email">
+                    <input type="email" name="email" placeholder="Confirm Email" class="user-input" v-model="register.email">
                 </div>
                 <div class="button-box">
                     <button class="login-btn btn bg-green-brand mt-5 py-2 px-[30px] text-white font-semibold text-[14px] hover:bg-white hover:text-green-brand transition-all duration-300" type="submit">
@@ -79,7 +79,7 @@ export default {
             this.$toast.success('Successfully registered');
         } catch (error) {
             console.log('error signing up:', error);
-            this.$toast.success('Error while registering');
+            this.$toast.error('Error while registering');
         }
     },
     handleCredentialResponse(response) {

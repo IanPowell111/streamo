@@ -6,7 +6,7 @@
             <div id="twitterButton"></div>
             <form @submit.prevent="userLogin">
                 <div class="login-input-box">
-                    <input type="text" name="user-name" placeholder="User Name" class="user-input" v-model="login.username">
+                    <input type="text" name="user-name" placeholder="Email" class="user-input" v-model="login.username">
                     <input type="password" name="user-password" placeholder="Password" class="user-input" v-model="login.password">
                 </div>
                 <div class="login-toggle-btn">
