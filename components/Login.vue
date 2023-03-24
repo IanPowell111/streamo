@@ -69,14 +69,17 @@ export default {
   methods: {      
     async userLogin() {
       try {
+        this.$toast.show('Logging in...')
         const user = await Auth.signIn(this.login.username, this.login.password);
         if(user){
           this.$router.push({ path: '/pricing', redirect: 'pricing'});
-          this.$toasted.show('Successfully Added User');
+          this.$toast.success('Successfully authenticated')
         }
         console.log(user)
       } catch (err) {
         console.log(err)
+        this.$toast.global.my_error() //Using custom toast
+        this.$toast.error('Error while authenticating')
       }
     },
     handleCredentialResponse(response) {

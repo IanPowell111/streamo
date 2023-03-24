@@ -82,7 +82,26 @@ export default {
   modules: [
     // '@sidebase/nuxt-auth',   
     // '@nuxtjs/tailwindcss', 'nuxt-icon' 
+    '@nuxtjs/toast',
   ],
+  toast: {
+      position: 'top-right',
+      duration: 5000,
+      transition: {
+        name: 'fadeIn',
+      },
+      pauseOnHover: true,
+      maxToasts: 5,
+      register: [ // Register custom toasts
+        {
+          name: 'my-error',
+          message: 'Oops...Something went wrong',
+          options: {
+            type: 'error'
+          }
+        }
+      ]
+  },
   auth: {
     // Options
     strategies: {
