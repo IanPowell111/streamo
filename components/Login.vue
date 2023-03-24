@@ -71,7 +71,7 @@ export default {
       try {
         const user = await Auth.signIn(this.login.username, this.login.password);
         if(user){
-          this.$router.push({ path: '/home', redirect: 'home' });
+          this.$router.push({ path: '/pricing', redirect: 'pricing' });
         }
         console.log(user)
       } catch (err) {
