@@ -2,7 +2,7 @@
   <div
     class="ml-[10px] sm:ml-[15px] pl-[10px] sm:pl-[15px] relative before:content-[''] before:bg-white before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-5 before:w-[1px]"
   >
-    <div v-click-outside="onClickOutside" v-if="isLoggedIn === true">
+    <div v-click-outside="onClickOutside" v-if="isLoggedIn === 'signedIn'">
       <button
         class="min-w-[32px] min-h-[32px] leading-[32px]"
         @click.prevent="displayClass = !displayClass"
@@ -44,16 +44,12 @@ export default {
     clickOutside: vClickOutside.directive,
   },
   async mounted() {
-    try {
-      curuser = await Auth.currentAuthenticatedUser();
-      if(curuser){
-        this.isLoggedIn = true;
-        console.log(this.isLoggedIn);
-      }else{
-        this.isLoggedIn = false;
-      }
-    } catch {
-      this.isLoggedIn = false;
+    const user = await Auth.currentAuthenticatedUser();
+    console.log('user:', user)
+    if (user) {
+        this.isLoggedIn = "signedIn";
+    } else {
+        this.isLoggedIn = "signUp";
     }
   },
   methods: {
