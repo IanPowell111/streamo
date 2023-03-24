@@ -71,9 +71,8 @@ export default {
       try {
         const user = await Auth.signIn(this.login.username, this.login.password);
         if(user){
-          this.$router.push({ path: '/pricing', redirect: 'pricing'}, () => {
-            this.$toasted.show('Successfully Added User');
-          });
+          this.$router.push({ path: '/pricing', redirect: 'pricing'});
+          this.$toasted.show('Successfully Added User');
         }
         console.log(user)
       } catch (err) {
