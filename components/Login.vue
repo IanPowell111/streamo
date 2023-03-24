@@ -77,7 +77,7 @@ export default {
         }
         console.log(user)
       } catch (err) {
-        console.log(err){
+        console.log(err);
         this.$toast.error('Error while authenticating')
       }
     },
