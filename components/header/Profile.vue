@@ -43,11 +43,14 @@ export default {
   directives: {
     clickOutside: vClickOutside.directive,
   },
-  async mounted() {
+  mounted() {
     try {
-      await Auth.currentAuthenticatedUser();
-      this.isLoggedIn = true;
-      console.log(this.isLoggedIn);
+      if(await Auth.currentAuthenticatedUser()){
+        this.isLoggedIn = true;
+        console.log(this.isLoggedIn);
+      }else{
+        this.isLoggedIn = false;
+      }
     } catch {
       this.isLoggedIn = false;
     }
