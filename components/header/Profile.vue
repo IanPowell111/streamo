@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       displayClass: false,
-      isLoggedIn: false,
+      isLoggedIn: undefined,
     };
   },
   directives: {
