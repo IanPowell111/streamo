@@ -34,19 +34,6 @@
 </style>
 <script>
 import { Auth }  from 'aws-amplify';
-import { required, email, sameAs, minLength } from '@vuelidate/validators';
-const rules = computed(() => {
-  return {
-    email: {
-      required: helpers.withMessage('The email field is required', required),
-      email: helpers.withMessage('Invalid email format', email),
-    },
-    password: {
-      required: helpers.withMessage('The password field is required', required),
-      minLength: minLength(6),
-    },
-  };
-});
 export default {
   middleware: 'auth',
   mounted() {
@@ -78,10 +65,6 @@ export default {
         password: ''
       }
     }
-  },
-  validations: {
-    username: { required, email},
-    password: { required, minLength: minLength(6)}
   },
   methods: {      
     async userLogin() {
