@@ -1,7 +1,7 @@
 <template>
     <div class="ml-[10px] sm:ml-[15px] pl-[10px] sm:pl-[15px] relative before:content-[''] before:bg-white before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-5 before:w-[1px]">
 
-        <div v-click-outside="onClickOutside">
+        <div v-click-outside="onClickOutside" v-if="isLoggedIn === true">
 
             <button class="min-w-[32px] min-h-[32px] leading-[32px]" @click.prevent="displayClass = !displayClass">
                 <img src="/images/review/author-01.png" alt="Auth">
@@ -33,10 +33,15 @@ export default{
     data(){
         return {
             displayClass: false,
+            isLoggedIn: false
         }
     },
     directives: {
       clickOutside: vClickOutside.directive
+    },
+    mounted() {
+        this.isLoggedIn = Auth.isUserLoggedIn();
+        console.log(this.isLoggedIn);
     },
     methods: {
         onClickOutside (event) {
