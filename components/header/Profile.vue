@@ -42,7 +42,15 @@ export default{
         onClickOutside (event) {
             this.displayClass = false;
         },
-        signOut: async () => Auth.signOut()
+        async signOut() {
+            try{
+                Auth.signOut();
+                this.$toast.success('Successfully logout')
+            }catch(err){
+                this.$toast.error(err)
+            }
+            
+        } 
     }
 }
 </script>
