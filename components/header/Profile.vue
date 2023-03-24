@@ -16,7 +16,7 @@
                         <n-link to="/account" class="">My Account</n-link>
                     </li>
                     <li class="mb-2">
-                        <n-link to="/login" class="" v-on:click="signOut">Sign Out</n-link>
+                        <n-link class="" v-on:click="signOut">Sign Out</n-link>
                     </li>
                 </ul>
             </div>
@@ -45,6 +45,7 @@ export default{
         async signOut() {
             try{
                 Auth.signOut();
+                this.$router.push({ path: '/login', redirect: 'login'});
                 this.$toast.success('Successfully logout')
             }catch(err){
                 this.$toast.error(err)
