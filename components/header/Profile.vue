@@ -43,15 +43,15 @@ export default {
   directives: {
     clickOutside: vClickOutside.directive,
   },
-  async mounted() {
-    const user = await Auth.currentAuthenticatedUser();
-    console.log('user:', user)
-    if (user) {
-        this.isLoggedIn = "signedIn";
-    } else {
-        this.isLoggedIn = "signUp";
-    }
-  },
+//   async mounted() {
+//     const user = await Auth.currentAuthenticatedUser();
+//     console.log('user:', user)
+//     if (user) {
+//         this.isLoggedIn = "signedIn";
+//     } else {
+//         this.isLoggedIn = "signUp";
+//     }
+//   },
   methods: {
     onClickOutside(event) {
       this.displayClass = false;
