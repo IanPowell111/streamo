@@ -43,7 +43,7 @@ export default {
   directives: {
     clickOutside: vClickOutside.directive,
   },
-  mounted() {
+  async mounted() {
     try {
       await Auth.currentAuthenticatedUser();
       this.isLoggedIn = true;
