@@ -1,7 +1,7 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <button id="googleButton" @click="googlelogin">Sign In with Google<slot></slot></button>
+            <button id="googleButton" @click="googlelogin" target="_blank">Sign In with Google<slot></slot></button>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
             <form @submit.prevent="userLogin">
