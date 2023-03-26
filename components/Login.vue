@@ -84,7 +84,8 @@ export default {
     handleCredentialResponse(response) {
     
       // call your backend API here
-      
+      const goolgeuser = Auth.federatedSignIn({provider: 'Google'});
+      console.log(goolgeuser);
       // the token can be accessed as: response.credential
     }
   }
