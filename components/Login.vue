@@ -29,7 +29,7 @@
     @apply border-1 border-[#1e272d] text-white bg-[#1e272d] mb-5 px-2 py-3 w-full text-[14px];
 }
 #googleButton{
-    @apply mb-5 w-full text-[14px] bg-white ;
+    @apply mb-5 w-full text-[18px] bg-white ;
 }
 </style>
 <script>
