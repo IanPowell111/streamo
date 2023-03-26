@@ -1,7 +1,7 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <div id="googleButton" @click="googlelogin"></div>
+            <div id="googleButton" @click="googlelogin">Sign In with Google</div>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
             <form @submit.prevent="userLogin">
@@ -29,7 +29,7 @@
     @apply border-1 border-[#1e272d] text-white bg-[#1e272d] mb-5 px-2 py-3 w-full text-[14px];
 }
 #googleButton{
-    @apply mb-5;
+    @apply mb-5 w-full text-[14px];
 }
 </style>
 <script>
@@ -38,25 +38,25 @@ export default {
   middleware: 'auth',
   mounted() {
     // initialize Google Sign in  
-    google.accounts.id.initialize({
-        // client_id: process.env.EMAIL_CLIENT_ID,
-        // callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
-        context: 'signin'
-      })
+    // google.accounts.id.initialize({
+    //     // client_id: process.env.EMAIL_CLIENT_ID,
+    //     // callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
+    //     context: 'signin'
+    //   })
     
-    // render button
-    google.accounts.id.renderButton(
-      document.getElementById('googleButton'),
-      { 
-        type: 'standard',
-        size: 'large',
-        text: 'signin_with',
-        shape: 'rectangular',
-        logo_alignment: 'center',
-        // width: 250,
+    // // render button
+    // google.accounts.id.renderButton(
+    //   document.getElementById('googleButton'),
+    //   { 
+    //     type: 'standard',
+    //     size: 'large',
+    //     text: 'signin_with',
+    //     shape: 'rectangular',
+    //     logo_alignment: 'center',
+    //     // width: 250,
         
-      }
-    )
+    //   }
+    // )
   },
   data() {
     return {
