@@ -38,11 +38,11 @@ export default {
   middleware: 'auth',
   mounted() {
     // initialize Google Sign in  
-    // google.accounts.id.initialize({
-    //     client_id: process.env.EMAIL_CLIENT_ID,
-    //     callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
-    //     context: 'signin'
-    //   })
+    google.accounts.id.initialize({
+        // client_id: process.env.EMAIL_CLIENT_ID,
+        // callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
+        context: 'signin'
+      })
     
     // render button
     google.accounts.id.renderButton(
