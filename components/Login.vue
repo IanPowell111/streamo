@@ -95,7 +95,7 @@ export default {
         email: token.email,
         name: token.name
       };      
-      await Auth.federatedSignIn(
+      Auth.federatedSignIn(
         'google',
         { token: response.credential, expires_at: token.exp },
         user
