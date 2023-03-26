@@ -1,7 +1,7 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <Button id="googleButton" @click="googlelogin">Sign In with Google</Button>
+            <button id="googleButton" @click="googlelogin">Sign In with Google<slot></slot></button>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
             <form @submit.prevent="userLogin">
@@ -29,7 +29,7 @@
     @apply border-1 border-[#1e272d] text-white bg-[#1e272d] mb-5 px-2 py-3 w-full text-[14px];
 }
 #googleButton{
-    @apply mb-5 w-full text-[14px];
+    @apply mb-5 w-full text-[14px] bg-white ;
 }
 </style>
 <script>
