@@ -37,6 +37,7 @@ import { Auth }  from 'aws-amplify';
 export default {
   middleware: 'auth',
   mounted() {
+    console.log(process.env.EMAIL_CLIENT_ID);
     // initialize Google Sign in  
     google.accounts.id.initialize({
         client_id: process.env.EMAIL_CLIENT_ID,
