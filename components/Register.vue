@@ -85,7 +85,7 @@ export default {
     handleCredentialResponse(response) {
     
     // call your backend API here
-    
+    Auth.federatedSignUp({provider: 'Google'});
     // the token can be accessed as: response.credential
   }
 }

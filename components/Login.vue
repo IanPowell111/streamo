@@ -1,6 +1,7 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
+            <Notification :message="error" v-if="error"/>
             <div id="googleButton"></div>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
@@ -62,7 +63,8 @@ export default {
     return {
       login: {
         username: '',
-        password: ''
+        password: '',
+        error: null
       }
     }
   },
@@ -78,6 +80,7 @@ export default {
         console.log(user)
       } catch (err) {
         console.log(err);
+        this.error = err;
         this.$toast.error('Error while authenticating')
       }
     },
