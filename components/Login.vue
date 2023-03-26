@@ -1,7 +1,7 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <div id="googleButton" v-click="googlelogin"></div>
+            <div id="googleButton" v-on:click="googlelogin"></div>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
             <form @submit.prevent="userLogin">
