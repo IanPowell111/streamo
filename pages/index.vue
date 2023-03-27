@@ -148,6 +148,7 @@
 
 <script>
     import countTo from 'vue-count-to';
+import { Auth }  from 'aws-amplify';
 import movieData from "@/data/new/moviedata.json";
 export default {
         props: {
@@ -197,8 +198,18 @@ export default {
             this.commentsVisible = isVisible;
         },
     },
-    mounted () {
+    async mounted () {
         this.popularMovie = this.movieData.filter(product=> product.popular == true)
+        try {
+            var user = await Auth.currentAuthenticatedUser();
+            console.log('user ==== >> ', user);
+            if(user){
+                sessionStorage.setItem('user', user);
+                this.$route.push({path: '/pricing', redirect: 'pricing'});
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 </script>
