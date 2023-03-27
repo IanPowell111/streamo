@@ -1,7 +1,7 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <div id="googleButton"></div>
+            <button id="googleButton" @click="googlelogin" target="_blank">Sign In with Google<slot></slot></button>
             <div id="facebookButton"></div>
             <div id="twitterButton"></div>
             <form @submit.prevent="userLogin">
@@ -29,7 +29,7 @@
     @apply border-1 border-[#1e272d] text-white bg-[#1e272d] mb-5 px-2 py-3 w-full text-[14px];
 }
 #googleButton{
-    @apply mb-5;
+    @apply mb-5 w-full text-[18px] bg-white p-3;
 }
 </style>
 <script>
@@ -37,27 +37,26 @@ import { Auth }  from 'aws-amplify';
 export default {
   middleware: 'auth',
   mounted() {
-    console.log(process.env.EMAIL_CLIENT_ID);
     // initialize Google Sign in  
-    google.accounts.id.initialize({
-        client_id: process.env.EMAIL_CLIENT_ID,
-        callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
-        context: 'signin'
-      })
+    // google.accounts.id.initialize({
+    //     // client_id: process.env.EMAIL_CLIENT_ID,
+    //     // callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
+    //     context: 'signin'
+    //   })
     
     // // render button
-    google.accounts.id.renderButton(
-      document.getElementById('googleButton'),
-      { 
-        type: 'standard',
-        size: 'large',
-        text: 'signin_with',
-        shape: 'rectangular',
-        logo_alignment: 'center',
-        // width: 250,
+    // google.accounts.id.renderButton(
+    //   document.getElementById('googleButton'),
+    //   { 
+    //     type: 'standard',
+    //     size: 'large',
+    //     text: 'signin_with',
+    //     shape: 'rectangular',
+    //     logo_alignment: 'center',
+    //     // width: 250,
         
-      }
-    )
+    //   }
+    // )
   },
   data() {
     return {
@@ -89,18 +88,6 @@ export default {
       const goolgeuser = Auth.federatedSignIn({provider: 'Google'});
       console.log(goolgeuser);
       // the token can be accessed as: response.credential
-    },
-    handleCredentialResponse(response) {
-      const token = jwt(response.credential);
-      const user = {
-        email: token.email,
-        name: token.name
-      };      
-      Auth.federatedSignIn(
-        'google',
-        { token: response.credential, expires_at: token.exp },
-        user
-      );
     }
   }
 }
