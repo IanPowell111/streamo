@@ -73,13 +73,22 @@ export default {
         this.$toast.show('Logging in...')
         const user = await Auth.signIn(this.login.username, this.login.password);
         if(user){
+          sessionStorage.setItem('user', user);
           this.$router.push({ path: '/pricing', redirect: 'pricing'});
           this.$toast.success('Successfully authenticated')
         }
-        console.log(user)
+        
+        console.log('singing in == >', user);
       } catch (err) {
-        console.log(err);
-        this.$toast.error('Error while authenticating')
+        if(err.message === 'User is not confirmed.'){
+          sessionStorage.setItem('email', this.login.username);
+          sessionStorage.setItem('password', this.login.password);
+          this.$router.push({path: '/verificationcode', redirect: 'verificationcode'});
+        }
+        else{
+          console.log(err.message);
+          this.$toast.error(err.message);
+        }
       }
     },
     async googlelogin() {

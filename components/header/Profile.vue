@@ -2,7 +2,7 @@
   <div
     class="ml-[10px] sm:ml-[15px] pl-[10px] sm:pl-[15px] relative before:content-[''] before:bg-white before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:transform before:h-5 before:w-[1px]"
   >
-    <div v-click-outside="onClickOutside" v-if="isLoggedIn === true">
+    <div v-click-outside="onClickOutside" v-if="isLoggedIn">
       <button
         class="min-w-[32px] min-h-[32px] leading-[32px]"
         @click.prevent="displayClass = !displayClass"
@@ -22,7 +22,7 @@
             <n-link to="/account" class="">My Account</n-link>
           </li>
           <li class="mb-2">
-            <n-link class="" v-on:click="signOut">Sign Out</n-link>
+            <button class="" v-on:click="signOut">Sign Out</button>
           </li>
         </ul>
       </div>
@@ -43,16 +43,12 @@ export default {
   directives: {
     clickOutside: vClickOutside.directive,
   },
-  async mounted() {
-    try {
-      curuser = await Auth.currentAuthenticatedUser();
-      if(curuser){
-        this.isLoggedIn = true;
-        console.log(this.isLoggedIn);
-      }else{
-        this.isLoggedIn = false;
-      }
-    } catch {
+  mounted() {
+    var curuser = sessionStorage.getItem('user');
+    console.log('current user ==> ', curuser);
+    if(curuser){
+      this.isLoggedIn = true;
+    }else{
       this.isLoggedIn = false;
     }
   },
@@ -61,7 +57,10 @@ export default {
       this.displayClass = false;
     },
     async signOut() {
+      console.log('signing out!!!');
       try {
+        sessionStorage.clear();
+        this.isLoggedIn = false;
         Auth.signOut();
         this.$router.push({ path: "/login", redirect: "login" });
         this.$toast.success("Successfully logout");

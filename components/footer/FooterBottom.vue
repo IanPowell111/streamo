@@ -6,7 +6,7 @@
             </p>
         </div>
         <div class="login-alert flex items-center md:flex-row flex-col lg:order-2 order-1">
-            <p class="text-white mb-3 md:mb-0 text-[14px] mr-[15px]">Already have an Account? <n-link class="text-white uppercase font-semibold hover:text-green-brand" to="/login">LOGIN</n-link></p>
+            <p v-if="!isLoggedIn" class="text-white mb-3 md:mb-0 text-[14px] mr-[15px]">Already have an Account? <n-link class="text-white uppercase font-semibold hover:text-green-brand" to="/login">LOGIN</n-link></p>
 
             <div class="flex items-center justify-center">
                 <n-link class="text-[16px] inline-block rounded-[3px] transition-all duration-300 py-[12px] px-[25px] bg-green-brand text-white font-medium hover:bg-white hover:text-[#333333] leading-[1]" to="/pricing">Become a Member</n-link>
@@ -14,3 +14,29 @@
         </div>
     </div>
 </template>
+<script>
+import vClickOutside from "v-click-outside";
+import { Auth } from "aws-amplify";
+// const header = () => (Auth.isUserLoggedIn()) ? <div>Account</div> : <div>Sign In</div>;
+export default {
+  data() {
+    return {
+      isLoggedIn: false,
+    };
+  },
+  directives: {
+    clickOutside: vClickOutside.directive,
+  },
+  mounted() {
+    var curuser = sessionStorage.getItem('user');
+    console.log('current user ==> ', curuser);
+    if(curuser){
+      this.isLoggedIn = true;
+    }else{
+      this.isLoggedIn = false;
+    }
+  },
+  methods: {
+  },
+};
+</script>
