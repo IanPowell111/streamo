@@ -1,7 +1,6 @@
 <template>
     <div class="lg:w-7/12 md:w-5/6 w-full mx-auto">
         <div class="border-1 border-[#333333] p-5 sm:p-[60px]">
-            <div id="googleButton"></div>
             <form @submit.prevent="signUp">
                 <div class="login-input-box">
                     <input type="text" name="user-name" placeholder="Email" class="user-input" v-model="register.username">
@@ -31,26 +30,26 @@ import { Auth }  from 'aws-amplify';
 export default {
   middleware: 'auth',
   mounted() {
-    // initialize Google Sign in  
-    google.accounts.id.initialize({
-        client_id: process.env.EMAIL_CLIENT_ID,
-        callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
-        context: 'signup'
-      })
+    // // initialize Google Sign in  
+    // google.accounts.id.initialize({
+    //     client_id: process.env.EMAIL_CLIENT_ID,
+    //     callback: this.handleCredentialResponse, //method to run after user clicks the Google sign in button
+    //     context: 'signup'
+    //   })
     
-    // render button
-    google.accounts.id.renderButton(
-      document.getElementById('googleButton'),
-      { 
-        type: 'standard',
-        size: 'large',
-        text: 'signup_with',
-        shape: 'rectangular',
-        logo_alignment: 'center',
-        // width: 250,
+    // // render button
+    // google.accounts.id.renderButton(
+    //   document.getElementById('googleButton'),
+    //   { 
+    //     type: 'standard',
+    //     size: 'large',
+    //     text: 'signup_with',
+    //     shape: 'rectangular',
+    //     logo_alignment: 'center',
+    //     // width: 250,
         
-      }
-    )
+    //   }
+    // )
   },
   data() {
     return {
@@ -81,13 +80,7 @@ export default {
             console.log('error signing up:', error);
             this.$toast.error('Error while registering');
         }
-    },
-    handleCredentialResponse(response) {
-    
-    // call your backend API here
-    Auth.federatedSignUp({provider: 'Google'});
-    // the token can be accessed as: response.credential
-  }
+    }
 }
 }
 </script>
