@@ -205,7 +205,7 @@ export default {
             console.log('user ==== >> ', user);
             if(user){
                 sessionStorage.setItem('user', user);
-                this.$route.push({path: '/pricing', redirect: 'pricing'});
+                this.$router.push({ path: '/pricing', redirect: 'pricing'});
             }
         } catch (error) {
             console.log(error);
