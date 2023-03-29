@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="grid grid-cols-1 sm:grid-cols-12 gap-8">
-            <div class="lg:col-span-4 sm:col-span-6" v-for='(price, index) in pricingData' :key='index'>
-                <div class="relative w-[300px] sm:w-full mx-auto" :class="price.defaultclass">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="lg:col-span-1 sm:col-span-1" v-for='(price, index) in pricingData' :key='index'>
+                <div class="relative w-[300px] sm:w-5/6 mx-auto" :class="price.defaultclass">
                     <div class="pricing-panel shadow-[0px_0px_10px_rgba(0,0,0,0.10)] overflow-hidden rounded-[5px] relative z-10">
-                        <div class="pricing-heading pt-[70px] pb-10 relative z-10 text-center before:bg-repeat before:bg-scroll before:rounded-[100%] before:h-[300px] before:absolute before:w-[610px] before:content before:-top-[170px] before:-left-[60px] before:transform before:-rotate-[22deg] before:-z-10 before:transition-all">
+                        <div class="pricing-heading pt-[60px] pb-10 relative z-10 text-center before:bg-repeat before:bg-scroll before:rounded-[100%] before:h-[300px] before:absolute before:w-[610px] before:content before:-top-[170px] before:-left-[60px] before:transform before:-rotate-[22deg] before:-z-10 before:transition-all">
                             <h2 class="text-white font-semibold text-[36px] leading-[1]">{{price.avgPrice}}</h2>
                             <h4 class="text-white font-semibold text-[18px] mt-2">{{price.aboutPkg}}</h4>
                         </div>

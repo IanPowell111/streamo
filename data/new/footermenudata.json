@@ -8,35 +8,7 @@
         "mainlink": "/about"
     },
     {
-        "name": "Series",
-        "mainlink": "/series"
-    },
-    {
         "name": "Contact Us",
         "mainlink": "/contact"
-    },
-    {
-        "name": "Tv Series",
-        "mainlink": "/series"
-    },
-    {
-        "name": "Tech",
-        "mainlink": "/home"
-    },
-    {
-        "name": "Movie",
-        "mainlink": "/movie"
-    },
-    {
-        "name": "Video",
-        "mainlink": "/movie"
-    },
-    {
-        "name": "Live",
-        "mainlink": "/home"
-    },
-    {
-        "name": "Tv Series",
-        "mainlink": "/series"
     }
 ]

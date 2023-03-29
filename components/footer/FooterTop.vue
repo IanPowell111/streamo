@@ -2,7 +2,7 @@
     <div class="flex flex-wrap md:flex-row flex-col">
         <div class="flex flex-col w-full sm:w-3/4 md:w-1/3 lg:w-1/4 mb-8 md:mb-0">
             <Logo logLink="/home"/>
-            <p class="text-sm text-white w-full sm:w-[75%] my-5">Eiusmod tempor incididunt ut la abore et minim ven exerc itation ulla mco lboris naliquip ex ea comm.</p>
+            <p class="text-sm text-white w-full sm:w-[75%] my-5">A web platform that offers sports decision-making training through high-quality videos for athletes and coaches</p>
             <ul class="fotter-socail">
                 <li class="inline-block" v-for='(link, index) in socialData' :key="index">
                     <a class="sm:h-[35px] sm:w-[35px] h-[30px] w-[30px] text-[14px] flex items-center justify-center rounded-full sm:mr-3 mr-2" :href="link.url" :class="link.mediaName"><i :class="link.iconName"></i></a>
@@ -22,7 +22,7 @@
                     </ul>
                 </div>
 
-                <BrandLogo />
+                <!--<BrandLogo />
 
                 <div class="footer-quicklink-2">
                     <ul class="flex items-center flex-wrap">
@@ -32,7 +32,7 @@
                             </n-link>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>

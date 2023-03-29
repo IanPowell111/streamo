@@ -202,7 +202,7 @@ export default {
         this.popularMovie = this.movieData.filter(product=> product.popular == true)
         try {
             var user = await Auth.currentAuthenticatedUser();
-            console.log('user ==== >> ', user);
+            console.log('user1 ==== >> ', user);
             if(user){
                 sessionStorage.setItem('user', user);
                 this.$router.push({ path: '/pricing', redirect: 'pricing'});

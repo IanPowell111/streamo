@@ -1,94 +1,49 @@
 [
     {
-        "freePack": true,
+        "freePack": false,
         "pack": "Free Pack",
-        "avgPrice": "$0.00",
-        "aboutPkg": "Free",
-        "listdata":[
+        "avgPrice": "$22.99 /month",
+        "aboutPkg": "Individual",
+        "listdata": [
             {
-                "text": "laboris nisi ut pariatur."
+                "text": "Individual access to the platform"
             },
             {
-                "text": "Secure Service"
+                "text": "High-quality videos"
             },
             {
-                "text": "laboris nisi ut pariatur."
+                "text": "Watch anywhere you want"
             },
             {
-                "text": "70 Cup of coffee"
-            },
-            {
-                "text": "Awesome Support"
-            },
-            {
-                "text": "Offline Download"
-            },
-            {
-                "text": "nam aliquam"
+                "text": "Unlimited access to our complete catalog"
             }
         ],
         "btnLink": "/contact",
-        "btnText": "Choose A Plan"
+        "btnText": "Choose This Plan"
     },
     {
         "freePack": false,
-        "avgPrice": "$100",
+        "avgPrice": "Custom",
         "aboutPkg": "Premium",
         "defaultclass": "default",
-        "listdata":[
+        "listdata": [
             {
-                "text": "laboris nisi ut pariatur."
+                "text": "Same features as the Individual plan"
             },
             {
-                "text": "Secure Service"
+                "text": "+"
             },
             {
-                "text": "laboris nisi ut pariatur."
+                "text": "Access to the platform for the whole team"
             },
             {
-                "text": "200 Cup of coffee"
+                "text": "Customized payment options"
             },
             {
-                "text": "Awesome Support"
-            },
-            {
-                "text": "Offline Download"
-            },
-            {
-                "text": "nam aliquam"
+                "text": "Get personnal recommendations from our experts"
             }
         ],
         "btnLink": "/contact",
-        "btnText": "Choose A Plan"
-    },
-    {
-        "freePack": false,
-        "avgPrice": "$200",
-        "aboutPkg": "Standard",
-        "listdata":[
-            {
-                "text": "laboris nisi ut pariatur."
-            },
-            {
-                "text": "Secure Service"
-            },
-            {
-                "text": "laboris nisi ut pariatur."
-            },
-            {
-                "text": "500 Cup of coffee"
-            },
-            {
-                "text": "Awesome Support"
-            },
-            {
-                "text": "Offline Download"
-            },
-            {
-                "text": "nam aliquam"
-            }
-        ],
-        "btnLink": "/contact",
-        "btnText": "Choose A Plan"
+        "btnText": "Contact Us"
     }
 ]

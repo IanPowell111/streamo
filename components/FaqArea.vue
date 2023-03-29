@@ -26,28 +26,28 @@
             activeIndex: null,
             items: [
                 {
-                    title: "What is streamo?",
-                    value: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    title: "What is MySweetSport?",
+                    value: "My Sweet Sport is a web platform that provides decision-making solutions for sports enthusiasts, coaches, and athletes, through a catalog of high-quality videos."
                 },
                 {
-                    title: "How expensive is Streamo?",
-                    value: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    title: "How can I track my progress?",
+                    value: "Our platform allows you to track your progress by providing you with analysis tools and performance indicators."
                 },
                 {
-                    title: "Can I watch with Streamo everywhere?",
-                    value: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    title: "How expensive is MySweetSport?",
+                    value: "22.99$/month for an individual plan. If you a looking for a team plan, just contact us."
+                },
+                {
+                    title: "How can I subscribe to My Sweet Sport as a team?",
+                    value: "Contact us today to discuss subscription options that are customized for your team and take advantage of the benefits of our complete catalog of high-quality videos."
                 },
                 {
                     title: "How easy is cancelling the subscription?",
-                    value: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    value: "Just send an email to subscription@mysweetsport.com and we'll cancel your subscription for you."
                 },
                 {
-                    title: "What else can I watch with Streamo?",
-                    value: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-                },
-                {
-                    title: "How good is Streamo for kids?",
-                    value: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                    title: "What do I get with a subscription?",
+                    value: "Unlimited access to our complete catalog of high-quality videos for sports making decision training."
                 }
             ]
         }

@@ -9,7 +9,7 @@ export default {
   // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Streamo - Netflix Like VueJs Website Template',
+    title: 'My Sweet Sport - Develop your consciousness',
     htmlAttrs: {
       lang: 'en'
     },

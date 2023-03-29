@@ -14,8 +14,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/slider-hm4-1.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -27,19 +27,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -60,8 +60,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/slider-hm4-2.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -73,19 +73,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -94,23 +94,23 @@
     },
     {
         "id": 3,
-        "singleImage": "/images/product/movie-03.jpg",
+        "singleImage": "/images/sports/cat-baseball.jpg",
         "comboPackSlider": true,
         "newprice": "270Tk",
         "oldprice": "300Tk",
-        "title": "The Walk",
+        "title": "Baseball",
         "category": [
-            "romantic"
+            "baseball"
         ],
         "date": "2022-02-02",
         "duration": "45 Minutes",
         "awarded": true,
-        "popular":true,
+        "popular": true,
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/slider-hm4-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -122,19 +122,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -143,23 +143,23 @@
     },
     {
         "id": 4,
-        "singleImage": "/images/product/movie-04.jpg",
+        "singleImage": "/images/sports/cat-football.jpg",
         "comboPackSlider": true,
         "newprice": "450Tk",
         "oldprice": "500Tk",
-        "title": "Never Stop Looking",
+        "title": "Football",
         "category": [
-            "romantic"
+            "football"
         ],
         "date": "2022-02-01",
         "duration": "45 Minutes",
         "awarded": true,
-        "popular":true,
+        "popular": true,
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/slider-hm4-4.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -171,19 +171,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -192,21 +192,20 @@
     },
     {
         "id": 5,
-        "singleImage": "/images/product/movie-05.jpg",
-        "title": "Silkovettes In The Attic",
+        "singleImage": "/images/sports/cat-hockey.jpg",
+        "title": "Hockey",
         "category": [
-            "romantic",
-            "horror"
+            "hockey"
         ],
         "date": "2021-12-24",
         "awarded": false,
-        "popular":true,
+        "popular": true,
         "duration": "45 Minutes",
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -218,19 +217,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -250,8 +249,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -263,19 +262,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -294,8 +293,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-5.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -307,19 +306,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -338,8 +337,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -351,19 +350,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -372,24 +371,23 @@
     },
     {
         "id": 9,
-        "singleImage": "/images/product/movie-09.jpg",
-        "title": "Train To Hell",
+        "singleImage": "/images/sports/cat-soccer.jpg",
+        "title": "Soccer",
         "category": [
-            "romantic",
-            "horror"
+            "soccer"
         ],
         "date": "2021-07-18",
         "certification": "A",
         "awarded": true,
-        "popular":true,
-        "trending":true,
-        "romanticBanner":true,
+        "popular": true,
+        "trending": true,
+        "romanticBanner": true,
         "duration": "45 Minutes",
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/movie-banner.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -401,19 +399,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -433,10 +431,10 @@
         "duration": "45 Minutes",
         "permit": "U/A 18+",
         "quality": "HD",
-        "romanticBannerslider":true,
+        "romanticBannerslider": true,
         "posterImage": "/images/slider/category-7.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -448,19 +446,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -479,15 +477,15 @@
         "date": "1995-04-12",
         "certification": "A",
         "awarded": true,
-        "popular":true,
-        "trending":true,
-        "romanticBannerslider":true,
+        "popular": true,
+        "trending": true,
+        "romanticBannerslider": true,
         "duration": "45 Minutes",
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/movie-1.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -499,19 +497,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -530,14 +528,14 @@
         "date": "1992-04-12",
         "certification": "A",
         "awarded": true,
-        "popular":true,
-        "trending":true,
+        "popular": true,
+        "trending": true,
         "duration": "45 Minutes",
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -549,19 +547,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -581,9 +579,9 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/category-4.jpg",
-        "video":"/video/video.mp4",
-        "trending":true,
-        "items":[
+        "video": "/video/video.mp4",
+        "trending": true,
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -595,19 +593,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -626,9 +624,9 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-5.jpg",
-        "video":"/video/video.mp4",
-        "trending":true,
-        "items":[
+        "video": "/video/video.mp4",
+        "trending": true,
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -640,19 +638,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -672,9 +670,9 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/horror-slider-1.png",
-        "video":"/video/video.mp4",
+        "video": "/video/video.mp4",
         "horrorbanner": true,
-        "items":[
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -686,19 +684,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -717,10 +715,10 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/slider/horror-slider-2.png",
-        "video":"/video/video.mp4",
-        "trending":true,
+        "video": "/video/video.mp4",
+        "trending": true,
         "horrorbanner": true,
-        "items":[
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -732,19 +730,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -760,13 +758,13 @@
         ],
         "date": "2018-04-12",
         "awarded": false,
-        "popular":true,
+        "popular": true,
         "duration": "45 Minutes",
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-5.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -778,19 +776,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -811,8 +809,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -824,19 +822,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -856,8 +854,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-5.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -869,19 +867,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -900,8 +898,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -913,19 +911,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -947,8 +945,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -960,19 +958,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -994,8 +992,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-5.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1007,19 +1005,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1040,8 +1038,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1053,19 +1051,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1086,8 +1084,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/bg/bg-5.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1099,19 +1097,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1130,8 +1128,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/movie-banner-3.png",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1143,19 +1141,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1175,8 +1173,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/series-banner-2.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1188,19 +1186,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1220,8 +1218,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/series-banner-2.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1233,19 +1231,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1264,9 +1262,9 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/series-banner-2.jpg",
-        "popular":true,
-        "video":"/video/video.mp4",
-        "items":[
+        "popular": true,
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1278,19 +1276,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1310,9 +1308,9 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/comedy-series-5.png",
-        "popular":true,
-        "video":"/video/video.mp4",
-        "items":[
+        "popular": true,
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1324,19 +1322,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],
@@ -1356,8 +1354,8 @@
         "permit": "U/A 18+",
         "quality": "HD",
         "posterImage": "/images/product/series-banner-2.jpg",
-        "video":"/video/video.mp4",
-        "items":[
+        "video": "/video/video.mp4",
+        "items": [
             {
                 "label": "Director :",
                 "labeldesc": "Brent Robinson"
@@ -1369,19 +1367,19 @@
         ],
         "socialData": [
             {
-                "url":"https://www.facebook.com/",
+                "url": "https://www.facebook.com/",
                 "className": "zmdi zmdi-facebook"
             },
             {
-                "url":"https://twitter.com/",
+                "url": "https://twitter.com/",
                 "className": "zmdi zmdi-twitter"
             },
             {
-                "url":"https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/",
                 "className": "zmdi zmdi-linkedin"
             },
             {
-                "url":"https://www.instagram.com/",
+                "url": "https://www.instagram.com/",
                 "className": "zmdi zmdi-instagram"
             }
         ],

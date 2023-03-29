@@ -4,37 +4,23 @@
         "name": "Home"
     },
     {
-        "url": "/series",
-        "name": "Series",
-        "submenu":[
+        "url": "/sport",
+        "name": "Sports",
+        "submenu": [
             {
-                "url": "/series/horror",
-                "name": "Horror Series"
+                "url": "/sport/baseball",
+                "name": "Baseball"
             },
             {
-                "url": "/series/romantic",
-                "name": "Romantic Series"
-            }
-        ]
-    },
-    {
-        "url": "/movie",
-        "name": "Movies",
-        "submenu":[
-            {
-                "url": "/movie/horror",
-                "name": "Horror Movies"
-            },
-            {
-                "url": "/movie/romantic",
-                "name": "Romantic Movies"
+                "url": "/sport/football",
+                "name": "Football"
             }
         ]
     },
     {
         "url": "",
         "name": "Pages",
-        "submenu":[
+        "submenu": [
             {
                 "url": "/about",
                 "name": "About Us"
@@ -67,6 +53,6 @@
     },
     {
         "url": "/contact",
-        "name":"Contact"
+        "name": "Contact"
     }
 ]
