@@ -15,7 +15,7 @@ export default {
     },
     script: [
       {
-        src: 'https://accounts.google.com/gsi/client',
+        src: "https://js.stripe.com/v3/",
       },
     ],
     meta: [
@@ -64,9 +64,12 @@ export default {
     {
       src: '~/plugins/vue-nav-tabs.js'
     },
-    { src: "~/plugins/amplify.js", ssr: false }
+    { src: "~/plugins/amplify.js", ssr: false },
+    { src: "~/plugins/stripe.js", ssr: false }
   ],
-
+  env: {
+    STRIPE_PK: process.env.STRIPE_PUBLISHABLE_KEY,
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -83,7 +86,12 @@ export default {
     // '@sidebase/nuxt-auth',   
     // '@nuxtjs/tailwindcss', 'nuxt-icon' 
     '@nuxtjs/toast',
+    "@nuxtjs/axios", 
+    "@nuxtjs/proxy"
   ],
+  axios: {
+    proxy: false,
+  },
   toast: {
       position: 'top-right',
       duration: 5000,
@@ -149,5 +157,6 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    vendor: ["axios"], // Description: Avoid duplicate packaging.
   }
 }
