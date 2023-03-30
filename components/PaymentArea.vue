@@ -55,11 +55,11 @@
             <div class="payment-plan-method payment-plan-method-white">	
                 <div class="row grid md:grid-cols-2 gap-6">
                     <div class="col-md-6 col-xs-12">
-                        <stripe-element-card
+                        <!-- <stripe-element-card
                             ref="cardRef"
                             :pk="pk"
                             hide-postal-code
-                            @token="tokenCreated"/>
+                            @token="tokenCreated"/> -->
                         <stripe-checkout
                             ref="checkoutRef"
                             mode="payment"
@@ -91,8 +91,8 @@
             quantity: 1,
             },
         ],
-        successUrl: 'http://localhost:3000',
-        cancelUrl: 'http://localhost:3000',
+        successUrl: 'https://main.dtmk7ddfqoslj.amplifyapp.com/home',
+        cancelUrl: 'https://main.dtmk7ddfqoslj.amplifyapp.com/pricing',
       };
     },
     methods: {
