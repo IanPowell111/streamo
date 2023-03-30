@@ -64,8 +64,14 @@ export default {
     {
       src: '~/plugins/vue-nav-tabs.js'
     },
-    { src: "~/plugins/amplify.js", ssr: false },
-    { src: "~/plugins/stripe.js", ssr: false }
+    {
+      src: "~/plugins/amplify.js", 
+      ssr: false
+    },
+    { 
+      src: "~/plugins/stripe.js", 
+      ssr: false 
+    }
   ],
   env: {
     STRIPE_PK: process.env.STRIPE_PUBLISHABLE_KEY,
