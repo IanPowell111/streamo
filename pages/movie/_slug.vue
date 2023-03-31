@@ -19,8 +19,10 @@
 </template>
 
 <script>
+import authentication from "../../mixins/authentication.js";
 import product from "@/data/new/moviedata.json";
     export default {
+        mixins:[authentication],
         components: {
             MainHeader: () => import('@/components/header/MainHeader'),
             OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),
