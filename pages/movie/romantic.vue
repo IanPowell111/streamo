@@ -23,7 +23,9 @@
 </template>
 
 <script>
+import authentication from "../../mixins/authentication.js";
 export default {
+    mixins:[authentication],
     components: {
         MainHeader: () => import('@/components/header/MainHeader'),
         OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),

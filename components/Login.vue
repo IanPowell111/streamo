@@ -35,7 +35,6 @@
 <script>
 import { Auth }  from 'aws-amplify';
 export default {
-  middleware: 'auth',
   mounted() {
     // initialize Google Sign in  
     // google.accounts.id.initialize({
