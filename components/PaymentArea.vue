@@ -91,8 +91,8 @@
             quantity: 1,
             },
         ],
-        successUrl: 'https://main.dtmk7ddfqoslj.amplifyapp.com/home',
-        cancelUrl: 'https://main.dtmk7ddfqoslj.amplifyapp.com/pricing',
+        successUrl: 'http://localhost:3000/home?session_id={CHECKOUT_SESSION_ID}',
+        cancelUrl: 'http://localhost:3000/pricing',
       };
     },
     methods: {

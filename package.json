@@ -19,6 +19,7 @@
     "aws-amplify": "^5.0.21",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
+    "stripe": "^11.17.0",
     "swiper": "5.4.5",
     "v-click-outside": "^3.1.2",
     "vue": "^2.6.14",
