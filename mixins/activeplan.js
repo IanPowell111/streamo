@@ -1,8 +1,6 @@
 import { Auth } from 'aws-amplify';
-// import { API } from 'aws-amplify';
-// import { getPlan } from './graphql/mutations';
-// import { GraphQLQuery } from '@aws-amplify/api';
-// import { GetTodoQuery } from './API';
+import { DataStore } from '@aws-amplify/datastore';
+import { Plan } from '../src/models';
 export default {
   async mounted() {
     // if (this.$store.state.account.authorized) {
@@ -11,12 +9,13 @@ export default {
 
     try {
       let user = await Auth.currentAuthenticatedUser({ bypassCache: false })
-      alert(user.username);
-      if (!user) {
-        this.$router.push('/login')
+      const models = await DataStore.query(Plan, p => p.user.eq(user.username));
+    //   alert(user.username);
+      if (!models.length || models.length && !models[0].plan) {
+        this.$router.push('/pricing')
       }
     } catch (err) {
-      this.$router.push('/login')
+      this.$router.push('/pricing')
     }
   }
 }

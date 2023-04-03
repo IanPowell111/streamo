@@ -52,14 +52,13 @@
 import authentication from "../../mixins/authentication.js";
 
 import activeplan from "../../mixins/activeplan.js";
-import { API } from 'aws-amplify';
 import { Auth } from 'aws-amplify';
 import { DataStore } from '@aws-amplify/datastore';
 import { Plan } from '../../src/models';
 // import { createTodo } from './graphql/mutations';
 export default {
     
-    mixins:[authentication, activeplan],
+    mixins:[authentication],
     components: {
         MainHeader: () => import('@/components/header/MainHeader'),
         OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),
@@ -77,14 +76,39 @@ export default {
     async mounted() {
         console.log(this.$route.query.session_id);
         let user = await Auth.currentAuthenticatedUser({ bypassCache: false })
+        const models = await DataStore.query(Plan, p => p.user.eq(user.username));
+        console.log('models', models);
         if(this.$route.query.session_id){
             console.log('payment success');
-            await DataStore.save(
-                new Plan({
-                    "plan": true,
-                    "user": user.username
-                })
-            ).then(res => console.log('res', res)).catch(e => console.log('err', e));
+            
+            // const models = await DataStore.query(Plan({
+            //     'user': user.username
+            // }));
+            // const oneTodo = await API.graphql<GraphQLQuery<GetTodoQuery>>(
+            // graphqlOperation(queries.getTodo, { id: 'some id' })
+            // );
+            if(models.length > 0){
+                /* Models in DataStore are immutable. To update a record you must use the copyOf function
+                to apply updates to the item’s fields rather than mutating the instance directly */
+                await DataStore.save(Plan.copyOf(models[0], item => {
+                    // Update the values on {item} variable to update DataStore entry
+                    // item.plan.eq("true")
+                    console.log(item)
+                }));
+            }else{
+                await DataStore.save(
+                    new Plan({
+                        "plan": true,
+                        "user": user.username
+                    })
+                ).then(res => console.log('res', res)).catch(e => console.log('err', e));
+            }
+            
+            
+        }else{
+            if (!models.length || models.length && !models[0].plan) {
+                this.$router.push('/pricing')
+            }
         }
         
     },
