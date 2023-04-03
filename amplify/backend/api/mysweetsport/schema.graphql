@@ -1,3 +1,9 @@
+type Plan @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  plan: Boolean
+  user: ID
+}
+
 type Categories @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!

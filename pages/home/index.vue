@@ -51,6 +51,7 @@
 <script>
 import authentication from "../../mixins/authentication.js";
 export default {
+    
     mixins:[authentication],
     components: {
         MainHeader: () => import('@/components/header/MainHeader'),
@@ -65,6 +66,12 @@ export default {
         HorrorSeries: () => import('@/components/series/HorrorSeries'),
         FooterTop: () => import('@/components/footer/FooterTop'),
         FooterBottom: () => import('@/components/footer/FooterBottom')
+    },
+    mounted() {
+        console.log(this.$route.query.session_id);
+        if(this.$route.query.session_id){
+            console.log('payment success');
+        }
     },
     data () {
         return {
