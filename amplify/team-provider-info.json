@@ -17,6 +17,9 @@
       },
       "storage": {
         "s3mysweetsportstorage39e7aa6f": {}
+      },
+      "api": {
+        "mysweetsport": {}
       }
     }
   }
