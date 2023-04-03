@@ -50,8 +50,12 @@
 
 <script>
 import authentication from "../../mixins/authentication.js";
+
 import activeplan from "../../mixins/activeplan.js";
 import { API } from 'aws-amplify';
+import { Auth } from 'aws-amplify';
+import { DataStore } from '@aws-amplify/datastore';
+import { Plan } from '../../src/models';
 // import { createTodo } from './graphql/mutations';
 export default {
     
@@ -70,11 +74,17 @@ export default {
         FooterTop: () => import('@/components/footer/FooterTop'),
         FooterBottom: () => import('@/components/footer/FooterBottom')
     },
-    mounted() {
+    async mounted() {
         console.log(this.$route.query.session_id);
+        let user = await Auth.currentAuthenticatedUser({ bypassCache: false })
         if(this.$route.query.session_id){
             console.log('payment success');
-            
+            await DataStore.save(
+                new Plan({
+                    "plan": true,
+                    "user": user.username
+                })
+            ).then(res => console.log('res', res)).catch(e => console.log('err', e));
         }
         
     },
