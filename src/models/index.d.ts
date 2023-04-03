@@ -6,6 +6,36 @@ import { LazyLoading, LazyLoadingDisabled, AsyncCollection, AsyncItem } from "@a
 
 
 
+type EagerPlan = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Plan, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly plan?: boolean | null;
+  readonly user?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyPlan = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Plan, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly plan?: boolean | null;
+  readonly user?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Plan = LazyLoading extends LazyLoadingDisabled ? EagerPlan : LazyPlan
+
+export declare const Plan: (new (init: ModelInit<Plan>) => Plan) & {
+  copyOf(source: Plan, mutator: (draft: MutableModel<Plan>) => MutableModel<Plan> | void): Plan;
+}
+
 type EagerCategories = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<Categories, 'id'>;

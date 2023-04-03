@@ -50,9 +50,12 @@
 
 <script>
 import authentication from "../../mixins/authentication.js";
+import activeplan from "../../mixins/activeplan.js";
+import { API } from 'aws-amplify';
+// import { createTodo } from './graphql/mutations';
 export default {
     
-    mixins:[authentication],
+    mixins:[authentication, activeplan],
     components: {
         MainHeader: () => import('@/components/header/MainHeader'),
         OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),
@@ -71,7 +74,9 @@ export default {
         console.log(this.$route.query.session_id);
         if(this.$route.query.session_id){
             console.log('payment success');
+            
         }
+        
     },
     data () {
         return {
