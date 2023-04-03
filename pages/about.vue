@@ -54,9 +54,10 @@
 </template>
 
 <script>
+import activeplan from "../mixins/activeplan";
 import authentication from "../mixins/authentication.js";
 export default {
-    mixins:[authentication],
+    mixins:[authentication, activeplan],
     components: {
         MainHeader: () => import('@/components/header/MainHeader'),
         OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),

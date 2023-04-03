@@ -21,8 +21,9 @@
 <script>
 import authentication from "../../mixins/authentication.js";
 import product from "@/data/new/seriesdata.json";
+import activeplan from "../../mixins/activeplan";
     export default {
-        mixins:[authentication],
+        mixins:[authentication, activeplan],
         components: {
             MainHeader: () => import('@/components/header/MainHeader'),
             OffcanvasSidebar: () => import('@/components/header/OffcanvasSidebar'),
