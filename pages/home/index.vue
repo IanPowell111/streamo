@@ -79,6 +79,14 @@ export default {
         const models = await DataStore.query(Plan, p => p.user.eq(user.username));
         console.log('models', models);
         if(this.$route.query.session_id){
+            // call rest api
+
+            const customer = await API.get('stripeAPI', '/checkout/success', {
+                                queryStringParameters: {
+                                    session_id: this.$route.query.session_id
+                                }
+                            });
+            console.log("customer=>", customer);
             console.log('payment success');
             
             // const models = await DataStore.query(Plan({

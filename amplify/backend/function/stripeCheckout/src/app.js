@@ -15,6 +15,7 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 
 // declare a new express app
 const app = express()
+const stripe = require('stripe')('sk_test_51LFOF2EpWzH5XJDZEHnbNprgfKELQ6hzbkm5fVtJCxcFmii2sbztuI9NgNu8SbSV4ndB3LbH8o2ffi0MMfgmAmOh00nIYXkxWK');
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
@@ -35,9 +36,11 @@ app.get('/checkout', function(req, res) {
   res.json({success: 'get call succeed!', url: req.url});
 });
 
-app.get('/checkout/*', function(req, res) {
+app.get('/checkout/success', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+  const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+  const customer = await stripe.customers.retrieve(session.customer);
+  res.json({success: true, url: req.url, customer: customer});
 });
 
 /****************************
