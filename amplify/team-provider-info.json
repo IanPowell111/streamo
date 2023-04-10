@@ -25,7 +25,7 @@
       "function": {
         "stripeCheckout": {
           "deploymentBucketName": "amplify-mysweetsport-dev-135036-deployment",
-          "s3Key": "amplify-builds/stripeCheckout-4b35642f48536d793032-build.zip"
+          "s3Key": "amplify-builds/stripeCheckout-32396247365a32494b49-build.zip"
         }
       }
     }
