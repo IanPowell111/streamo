@@ -19,7 +19,14 @@
         "s3mysweetsportstorage39e7aa6f": {}
       },
       "api": {
-        "mysweetsport": {}
+        "mysweetsport": {},
+        "stripeAPI": {}
+      },
+      "function": {
+        "stripeCheckout": {
+          "deploymentBucketName": "amplify-mysweetsport-dev-135036-deployment",
+          "s3Key": "amplify-builds/stripeCheckout-4b35642f48536d793032-build.zip"
+        }
       }
     }
   }
