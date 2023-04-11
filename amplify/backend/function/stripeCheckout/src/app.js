@@ -31,7 +31,7 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-app.get('/checkout', function(req, res) {
+app.get('/checkout', async function(req, res) {
   try {
     const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
     const customer = await stripe.customers.retrieve(session.customer);
@@ -41,7 +41,7 @@ app.get('/checkout', function(req, res) {
   }
 });
 
-app.get('/checkout/success', function(req, res) {
+app.get('/checkout/success',async function(req, res) {
   // Add your code here
   try {
     const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
