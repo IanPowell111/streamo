@@ -94,6 +94,14 @@
           "resourceName": "stripeCheckout"
         }
       ]
+    },
+    "AMPLIFY_function_stripeCheckout_stripeSecretKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "stripeCheckout"
+        }
+      ]
     }
   },
   "storage": {
