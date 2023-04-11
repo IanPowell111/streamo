@@ -32,15 +32,24 @@ app.use(function(req, res, next) {
  **********************/
 
 app.get('/checkout', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+  try {
+    const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+    const customer = await stripe.customers.retrieve(session.customer);
+    res.json({success: true, url: req.url, customer: customer});    
+  } catch (error) {
+    res.json({error: error.message});
+  }
 });
 
 app.get('/checkout/success', function(req, res) {
   // Add your code here
-  const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
-  const customer = await stripe.customers.retrieve(session.customer);
-  res.json({success: true, url: req.url, customer: customer});
+  try {
+    const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+    const customer = await stripe.customers.retrieve(session.customer);
+    res.json({success: true, url: req.url, customer: customer});    
+  } catch (error) {
+    res.json({error: error.message});
+  }
 });
 
 /****************************
