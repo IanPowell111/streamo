@@ -52,7 +52,7 @@
 import authentication from "../../mixins/authentication.js";
 
 import activeplan from "../../mixins/activeplan.js";
-import { Auth } from 'aws-amplify';
+import { Auth, API } from 'aws-amplify';
 import { DataStore } from '@aws-amplify/datastore';
 import { Plan } from '../../src/models';
 // import { createTodo } from './graphql/mutations';
@@ -81,7 +81,7 @@ export default {
         if(this.$route.query.session_id){
             // call rest api
 
-            const customer = await API.get('stripeAPI', '/checkout/success', {
+            const customer = await API.get('stripeAPI', '/checkout', {
                                 queryStringParameters: {
                                     session_id: this.$route.query.session_id
                                 }
