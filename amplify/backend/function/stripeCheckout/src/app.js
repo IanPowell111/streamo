@@ -32,14 +32,13 @@ app.use(function(req, res, next) {
  **********************/
 
 app.get('/checkout', async function(req, res) {
-  // try {
-  //   const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
-  //   const customer = await stripe.customers.retrieve(session.customer);
-  //   res.json({success: true, url: req.url, customer: customer});    
-  // } catch (error) {
-  //   res.json({error: error.message});
-  // }
-  res.json({success: 'post call succeed!', url: req.url})
+  try {
+    const session = await stripe.checkout.sessions.retrieve(req.query.session_id);
+    const customer = await stripe.customers.retrieve(session.customer);
+    res.json({ statusCode:200,  success: true, url: req.url, customer: customer});    
+  } catch (error) {
+    res.json({error: error.message});
+  }
 });
 
 app.get('/checkout/success',async function(req, res) {
